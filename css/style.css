@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+:root {
+    --primary: #FCE029;
+    --black-shade: #231F20;
+    --btn-blue: #0A75BC;
+    --white: #ffffff;
+}
+body {
+    font-family: 'Mali', cursive;
+    color: var(--black-shade);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    text-align: center;
+    padding: 2.5rem 0;
+    background-color: var(--primary);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    border: 3px solid var(--black-shade);
+    margin: 2rem auto;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: 'Mali', cursive;
+    font-size: 18px;
+}
+
+.btn {
+    font-family: 'Mali', cursive;
+    padding: 1rem 3rem;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--black-shade);
+    border: 3px solid var(--black-shade);
+    border-radius: 5px;
+    transition: all 250ms;
+}
+.btn:hover, .btn:focus {
+    color: var(--white);
+    background-color: var(--btn-blue);
+    border: 3px solid var(--primary);
+}
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black-shade);
+}
+footer .dev {
+    font-size: 18px;
+}
+footer .dev .link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--btn-blue);
+}
