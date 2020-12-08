@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 :root {
     --border: #FFD700;
     --font: #ffffff;
 }
 body {
-    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 600;
     background-image: url(../images/pirates-3-bicubic.jpg);
     background-size: cover;
@@ -25,9 +25,9 @@ body {
 
 header {
     text-align: center;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     color: var(--font);
-    font-size: 24px;
+    font-size: 20px;
 }
 
 textarea {
@@ -40,7 +40,7 @@ textarea {
     margin: 2rem auto;
     border-radius: 5px;
     padding: 1rem;
-    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 600;
     font-size: 22px;
 }
@@ -51,13 +51,13 @@ textarea:focus {
     outline: none;
 }
 .btn {
-    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
     width: 100%;
     cursor: pointer;
     padding: 1rem 3rem;
     font-size: 22px;
     font-weight: 600;
-    color: var(--white);
+    color: var(--font);
     border: 3px solid var(--border);
     background: transparent;
     border-radius: 5px;
@@ -65,19 +65,19 @@ textarea:focus {
 }
 .btn:hover, .btn:focus {
     outline: none;
-    color: var(--white);
+    color: var(--font);
 }
 footer {
     padding: 1rem 0 0 0;
     text-align: center;
     color: var(--font);
-    font-size: 18px;
+    font-size: 14px;
 }
 footer .dev {
-    font-size: 20px;
+    font-size: 16px;
 }
 footer .dev .link {
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     color: var(--btn-blue);
 }
