@@ -11,7 +11,7 @@ const loading = document.querySelector("#spinner");
 const buttonTranslate = document.querySelector("#btn-translate");
 
 buttonTranslate.addEventListener("click", translateHandler);
-
+// pirate https://api.funtranslations.com/translate/pirate.json
 var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
 // functional part

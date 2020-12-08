@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
 :root {
     --black-shade: #231f205e;
     --btn-blue: #0A75BC;
     --white: #ffffff;
 }
 body {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Caveat', cursive;
     font-weight: 600;
-    background-image: url(../images/star-wars-squadrons-zoom-background.jpg);
+    background-image: url(../images/pirates-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -38,13 +38,16 @@ textarea {
     margin: 2rem auto;
     border-radius: 5px;
     padding: 1rem;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Caveat', cursive;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
+    opacity: 0.5;
 }
-
+textarea:focus {
+    outline: none;
+}
 .btn {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Caveat', cursive;
     width: 100%;
     cursor: pointer;
     padding: 1rem 3rem;
