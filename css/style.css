@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
 :root {
-    --black-shade: #231f205e;
-    --btn-blue: #0A75BC;
-    --white: #ffffff;
+    --border: #FFD700;
+    --font: #ffffff;
 }
 body {
     font-family: 'Caveat', cursive;
     font-weight: 600;
-    background-image: url(../images/pirates-3.jpg);
+    background-image: url(../images/pirates-3-bicubic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -27,21 +26,26 @@ body {
 header {
     text-align: center;
     padding: 2.5rem 0;
-    color: var(--white);
+    color: var(--font);
+    font-size: 24px;
 }
 
 textarea {
     display: block;
     width: 100%;
     min-height: 20vh;
-    border: 3px solid var(--black-shade);
+    background: transparent;
+    color: var(--font);
+    border: 3px solid var(--border);
     margin: 2rem auto;
     border-radius: 5px;
     padding: 1rem;
     font-family: 'Caveat', cursive;
     font-weight: 600;
     font-size: 22px;
-    opacity: 0.5;
+}
+textarea::placeholder {
+    color: var(--font);
 }
 textarea:focus {
     outline: none;
@@ -51,25 +55,26 @@ textarea:focus {
     width: 100%;
     cursor: pointer;
     padding: 1rem 3rem;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 600;
     color: var(--white);
-    background-color: var(--black-shade);
-    border: 2px solid var(--btn-blue);
+    border: 3px solid var(--border);
+    background: transparent;
     border-radius: 5px;
     transition: all 250ms;
 }
 .btn:hover, .btn:focus {
+    outline: none;
     color: var(--white);
-    background-color: var(--btn-blue);
 }
 footer {
-    background-color: var(--black-shade);
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
     text-align: center;
-    color: var(--white);
+    color: var(--font);
+    font-size: 18px;
 }
 footer .dev {
-    font-size: 18px;
+    font-size: 20px;
 }
 footer .dev .link {
     font-weight: 600;
@@ -85,7 +90,7 @@ footer .dev .link {
     height: 50px;
 
     border: 5px solid #f3f3f3;
-    border-top: 6px solid #f25a41;
+    border-top: 6px solid var(--border);
     border-radius: 100%;
     position: absolute;
     top: 0;
